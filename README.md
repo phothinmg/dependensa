@@ -26,10 +26,10 @@
 
 It is published in two forms from a single codebase:
 
-| Platform         | Package               | Install                     |
-| ---------------- | --------------------- | --------------------------- |
-| Rust (crates.io) | `dependensa`          | `cargo add dependensa`      |
-| Node.js (npm)    | `@suseejs/dependensa` | `npm i @suseejs/dependensa` |
+| Platform         | Package      | Install                |
+| ---------------- | ------------ | ---------------------- |
+| Rust (crates.io) | `dependensa` | `cargo add dependensa` |
+| Node.js (npm)    | `dependensa` | `npm i dependensa`     |
 
 The Node.js package ships prebuilt native binaries (via [napi-rs](https://napi.rs)) for Linux, macOS, and Windows on x64 and arm64, so no toolchain is required at install time.
 
@@ -60,10 +60,10 @@ cargo add dependensa
 **Node.js** — install the native package:
 
 ```bash
-npm i @suseejs/dependensa
+npm i dependensa
 # or
-pnpm add @suseejs/dependensa
-yarn add @suseejs/dependensa
+pnpm add dependensa
+yarn add dependensa
 ```
 
 Prebuilt binaries are available for:
@@ -110,7 +110,7 @@ fn main() {
 ### Node.js / TypeScript
 
 ```ts
-import { analyze, graph } from "@suseejs/dependensa";
+import { analyze, graph } from "dependensa";
 
 // `graph()` returns a typed object with each derived view.
 const result = graph("index.ts", ".");
@@ -210,7 +210,7 @@ The Node.js binding exposes two functions. Both take the same arguments as the R
 #### Serialization (Node.js)
 
 ```ts
-import { analyze } from "@suseejs/dependensa";
+import { analyze } from "dependensa";
 
 const json = analyze("index.ts", ".");
 const graph = JSON.parse(json);
