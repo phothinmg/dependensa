@@ -1,6 +1,6 @@
 [package]
 name = "dependensa"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2024"
 description = "A static analysis tool designed to examine TypeScript and JavaScript projects and produce dependency graphs."
 license = "Apache-2.0"
