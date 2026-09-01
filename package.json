@@ -1,6 +1,6 @@
 {
   "name": "dependensa",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Static analysis tool for TypeScript and JavaScript projects — produces dependency graphs.",
   "license": "Apache-2.0",
   "repository": {
